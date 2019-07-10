@@ -114,6 +114,18 @@ namespace PdfRpt.Core.Helper
 
             if (!pdfRptTableCellDefinition.BasicProperties.ShowBorder)
                 pdfPCell.BorderWidth = 0;
+
+            if (pdfRptTableCellDefinition.BasicProperties.ShowTopBorder)
+            {
+                pdfPCell.BorderColorTop = pdfRptTableCellDefinition.BasicProperties.BorderColor;
+                pdfPCell.BorderWidthTop = 1;
+            }
+            if (pdfRptTableCellDefinition.BasicProperties.ShowBottomBorder)
+            {
+                pdfPCell.BorderColorBottom = pdfRptTableCellDefinition.BasicProperties.BorderColor;
+                pdfPCell.BorderWidthBottom = 1;
+            }
+
         }
 
         /// <summary>

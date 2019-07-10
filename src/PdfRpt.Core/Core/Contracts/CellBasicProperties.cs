@@ -77,6 +77,14 @@ namespace PdfRpt.Core.Contracts
         /// Sets visibility of the cell's border
         /// </summary>
         public bool ShowBorder { set; get; }
+        /// <summary>
+        /// Sets visibility of the cell's Top border
+        /// </summary>
+        public bool ShowTopBorder { set; get; }
+        /// <summary>
+        /// Sets visibility of the cell's Bottom border
+        /// </summary>
+        public bool ShowBottomBorder { set; get; }
 
         /// <summary>
         /// Cell's background color value
